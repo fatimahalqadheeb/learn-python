@@ -38,3 +38,40 @@ g = "######I love Python and PHP#####"
 print(g.strip("#"))  # remove charchter
 print(g.rstrip("#"))
 print(g.lstrip("#"))
+
+h = "I love python"
+print(h.startswith("I"))  # check id string start with a letter, boolean result
+print(h.startswith("P"))
+print(h.startswith("p", 7, 12))
+print(h.endswith("n"))  # check the end of the string
+
+# index(subString, start, end) find the index of an elements
+# find(subString, start, end) does not through error when item not found ir results with -1
+i = "fatimah"
+print(i.index("f"))
+
+# rjust(width, symbol) ljust() fill the space with symbol
+
+j = "fatimah"
+print(j.rjust(15, "#"))
+print(j.ljust(15, "#"))
+
+# splitlines() return a list of lines
+k = """first line
+second line
+third line
+"""
+print(k.splitlines())
+
+# replace(oldVlue, new value, count)
+l = "one two three one one"
+print(l.replace("one", "1"))
+print(l.replace("one", "1", 2))
+
+# join(Iterable)
+m = ["fatimah", "mohammed", "alqadheeb"]  # list
+n = {"fatimah", "mohammed", "alqadheeb"}  # set
+print(" ".join(m))
+print("-".join(m))
+print(", ".join(m))
+print(type(", ".join(m)))  # it will be a string
