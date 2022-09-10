@@ -9,3 +9,12 @@ print(colors)
 
 colors.remove('pink')
 print(colors)
+
+colors.clear()
+print(colors)
+
+colors.append('pink')
+print(colors)
+
+colors[0] = 'green'
+print(colors)
